@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Prawo-Brawo!</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🧠 Rozszyfruj rebus i odblokuj gratulacje!</h1>
+    <img src="rebus.png" alt="Zagadkowy rebus" class="rebus-img"/>
+    <input type="text" id="answerInput" placeholder="Wpisz odpowiedź..." />
+    <button onclick="checkAnswer()">Sprawdź</button>
+    <div id="congrats" class="hidden">
+      <h2>🎉 GRATULACJE! ZDAŁAŚ/ZDAŁEŚ OBRONĘ! 🎓</h2>
+      <p>Jesteś oficjalnie MGR-em 2025. Teraz czas na zasłużony chill i popcorn.</p>
+      <p>🪙 Sekretny kod: <strong>MGR2025</strong></p>
+      <p>📬 Wyślij go w wiadomości prywatnej, a otrzymasz <em>eksperymentalną kolekcję kilkuset zdjęć połączonych w dramatyczny ciąg (aka MP4)</em>.</p>
+    </div>
+  </div>
+
+  <script>
+    function checkAnswer() {
+      const correctAnswer = "skarbówka"; // <-- możesz tu zmienić hasło
+      const input = document.getElementById("answerInput").value.trim().toLowerCase();
+      const congratsDiv = document.getElementById("congrats");
+
+      if (input === correctAnswer) {
+        alert("Poprawna odpowiedź! 🎁odblokowałaś tajny kod🎁");
+        congratsDiv.classList.remove("hidden");
+      } else {
+        alert("Hmm... to nie to. Spróbuj jeszcze raz.");
+      }
+    }
+  </script>
+</body>
+</html>

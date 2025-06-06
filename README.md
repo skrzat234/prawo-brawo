@@ -3,4 +3,4 @@
 
 > *Gdy prawo spotyka wolność... i brak planów na poniedziałek*
 
-`Kliknij` zanim zapomnisz, że kiedyś się uczyłeś Konstytucji na pamięć.
+Kliknij zanim zapomnisz, że kiedyś się uczyłeś Konstytucji na pamięć.
